@@ -1,0 +1,23 @@
+<div ng-hide="loading">
+    <h1> Liste des clients </h1>
+
+    Rechercher un client par son identifiant : <input type="text" ng-model="id">
+
+    <br>
+    <br>
+
+    <a href="#!/add">Ajouter un nouveau client</a>
+
+    <br>
+    <br>
+    <hr>
+
+    <div class="fiche-client" ng-repeat="client in clients |  filter:{id: id}">
+        <h3>Nom : {{client.name}} #{{client.id}}</h3>
+        <p>N° SIRET : {{client.siret}}</p>
+        <a href="#!/edit/{{client.id}}"> Modifier le client </a> <br>
+        <a href="#!/delete/{{client.id}}"> Supprimer le client </a>
+
+        <hr>
+    </div>
+</div>

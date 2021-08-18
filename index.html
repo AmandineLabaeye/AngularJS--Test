@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.8.2/angular-route.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Angular JS | Gestion d'un client </title>
+</head>
+
+<body ng-app="MonApp">
+
+    <div ng-show="loading">Chargement</div>
+
+    <div ng-view></div>
+
+    <script src="js/app.js"></script>
+
+    <script src="js/service/extensions.js"></script>
+
+    <script src="js/controller/extensions.js"></script>
+
+    <script src="js/service/clients.js"></script>
+
+    <script src="js/controller/read.js"></script>
+
+    <script src="js/controller/edit.js"></script>
+
+</body>
+
+</html>
