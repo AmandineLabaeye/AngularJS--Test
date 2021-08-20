@@ -60,16 +60,16 @@ app.factory('Client', function($q) {
             return deferred.promise;
         },
 
-        setClient: function(id, nom, siret) {
-            // Il va ajouter un nouveau client
+        addClient: function(id, nom, siret) {
+            alert('Le client N° ' + id + ' NOM: ' + nom + ' SIRET: ' + siret + ' a bien été ajouter.');
         },
 
         editClient: function(id, nom, siret) {
-            // Il va modifier un client
+            alert('Le client N° ' + id + ' ' + nom + ' a bien été modifier.');
         },
 
-        deleteClient: function(id) {
-            // Il va supprimer un client
+        deleteClient: function(id, nom) {
+            alert('Le client N° ' + id + ' ' + nom + ' a bien été supprimer.');
         }
 
     };

@@ -1,15 +1,19 @@
-<button><a href="#!/"> Retourne au menu </a></button>
+<div ng-hide="loading">
 
-<br>
+    <button><a href="#!/"> Retourne au menu </a></button>
 
-<button><a href="#!/read"> Retourne à liste des clients </a></button>
+    <br>
 
-<h1>Le client est en cours est {{name}} </h1>
+    <button><a href="#!/read"> Retourne à liste des clients </a></button>
 
-<p> <strong> Identifiant : {{id}}</strong></p>
+    <h1>Le client est en cours est {{name}} </h1>
 
-<p> <strong> N° SIRET : {{siret}} </strong></p>
+    <p> <strong> Identifiant : {{id}}</strong></p>
 
-Identifiant : <input type="number" disabled="disabled" ng-model="id"> Nom : <input type="text" ng-model="name"> Siret : <input type="text" ng-model="siret">
+    <p> <strong> N° SIRET : {{siret}} </strong></p>
 
-<button ng-click="modifier(nom, siret)"> Modifier le client </button>
+    Identifiant : <input type="number" disabled="disabled" ng-model="id"> Nom : <input type="text" ng-model="name"> Siret : <input type="text" ng-model="siret">
+
+    <button ng-click="modifier(name, siret)"> Modifier le client </button>
+
+</div>

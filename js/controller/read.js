@@ -9,4 +9,11 @@ app.controller('ReadClientCtrl', function($scope, $rootScope, Client, $timeout) 
         }
     }, 1000)
 
+    $scope.supprimer = function(id, nom) {
+
+        Client.deleteClient(id, nom);
+
+        document.location.href = "#!/read";
+    }
+
 })

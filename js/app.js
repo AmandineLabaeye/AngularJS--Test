@@ -21,10 +21,6 @@ app.config(function($routeProvider) {
             templateUrl: 'edit.html',
             controller: 'EditClientCtrl'
         })
-        .when('/delete/:id', {
-            templateUrl: 'delete.html',
-            controller: 'DeleteClientCtrl'
-        })
         .otherwise({
             redirectTo: '/'
         })

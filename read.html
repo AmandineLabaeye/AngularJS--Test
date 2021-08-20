@@ -6,7 +6,7 @@
     <br>
     <br>
 
-    <a href="#!/add">Ajouter un nouveau client</a>
+    <button><a href="#!/add">Ajouter un nouveau client</a></button>
 
     <br>
     <br>
@@ -15,8 +15,10 @@
     <div class="fiche-client" ng-repeat="client in clients |  filter:{id: id}">
         <h3>Nom : {{client.name}} #{{client.id}}</h3>
         <p>N° SIRET : {{client.siret}}</p>
-        <a href="#!/edit/{{client.id}}"> Modifier le client </a> <br>
-        <a href="#!/delete/{{client.id}}"> Supprimer le client </a>
+        <button><a href="#!/edit/{{client.id}}"> Modifier le client </a> </button>
+        <br>
+        <br>
+        <button ng-click="supprimer(client.id, client.name)"> Supprimer le client </button>
 
         <hr>
     </div>
