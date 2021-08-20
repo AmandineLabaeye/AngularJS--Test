@@ -12,7 +12,7 @@ app.factory('Extensions', function() {
                     result = "";
                     break;
                 } else {
-                    result = "Il n'y a pas d'extensions dans ce nom de fichier";
+                    result = "Il n'y a pas d'extension dans ce nom de fichier";
                 }
             }
 

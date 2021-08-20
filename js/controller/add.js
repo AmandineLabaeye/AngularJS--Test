@@ -1,6 +1,11 @@
-app.controller('AddClientCtrl', function($scope, $rootScope, Client) {
+app.controller('AddClientCtrl', function($scope, $rootScope, Client, $timeout) {
 
-    $rootScope.loading = false;
+    $rootScope.loading = true;
+
+    $timeout(function() {
+        $rootScope.loading = false;
+
+    }, 1000);
 
     $scope.ajouter = function(id, nom, siret) {
 

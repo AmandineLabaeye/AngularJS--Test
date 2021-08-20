@@ -1,6 +1,10 @@
 app.controller('ExtensionsCtrl', function($scope, $rootScope, Extensions, $timeout) {
 
-    $rootScope.loading = false;
+    $rootScope.loading = true;
+
+    $timeout(function() {
+        $rootScope.loading = false;
+    }, 1000);
 
     $scope.update = function(nomFichier) {
 
